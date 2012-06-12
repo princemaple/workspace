@@ -1,0 +1,51 @@
+[
+	{ "keys": ["alt+space"], "command": "auto_complete" },
+	{ "keys": ["alt+space"], "command": "replace_completion_with_auto_complete", "context":
+		[
+			{ "key": "last_command", "operator": "equal", "operand": "insert_best_completion" },
+			{ "key": "setting.tab_completion", "operator": "equal", "operand": true }
+		]
+	},
+	{
+		"keys": ["ctrl+d"], "command": "find_under_expand",
+		"args": {"forward": true},
+		"context": [{"key": "setting.command_mode"}, {"key": "setting.vintage_ctrl_keys"}]
+	},
+	// { "keys": ["ctrl+k", "ctrl+f"], "command": "indentxml" },
+	{ "keys": ["j", "j"], "command": "exit_insert_mode",
+	  "context":
+	  [
+	    { "key": "setting.command_mode", "operand": false },
+	    { "key": "setting.is_widget", "operand": false }
+	  ]
+	},
+	{ "keys": ["tab"], "command": "move", "args": {"by": "characters", "forward": true}, "context":
+    [
+        { "key": "selection_empty", "operator": "equal", "operand": true },
+        { "key": "preceding_text", "operator": "not_regex_match", "operand": "[[:space:]]*", "match_all": true },
+        { "key": "following_text", "operator": "regex_contains", "operand": "^[\"'\\)\\}\\]\\>]", "match_all": true },
+        { "key": "auto_complete_visible", "operator": "equal", "operand": false },
+        { "key": "has_next_field", "operator": "equal", "operand": false }
+    ]
+	},
+	{ "keys": ["tab"], "command": "move", "args": {"by": "words", "forward": true}, "context":
+	    [
+	        { "key": "selection_empty", "operator": "equal", "operand": true},
+	        { "key": "preceding_text", "operator": "not_regex_match", "operand": "[[:space:]]*", "match_all": true },
+	        { "key": "following_text", "operator": "regex_contains", "operand": "^[.,:;]", "match_all": true },
+	        { "key": "auto_complete_visible", "operator": "equal", "operand": false },
+	        { "key": "has_next_field", "operator": "equal", "operand": false }
+	    ]
+	},
+	{ "keys": ["tab"], "command": "move", "args": {"by": "characters", "forward": true}, "context":
+	    [
+	        { "key": "selection_empty", "operator": "equal", "operand": true},
+	        { "key": "selector", "operator": "equal", "operand": "text.tex.latex", "match_all": true },
+	        { "key": "preceding_text", "operator": "not_regex_match", "operand": "[[:space:]]*", "match_all": true },
+	        { "key": "following_text", "operator": "regex_contains", "operand": "^[$]", "match_all": true },
+	        { "key": "auto_complete_visible", "operator": "equal", "operand": false },
+	        { "key": "has_next_field", "operator": "equal", "operand": false }
+	    ]
+	},
+	{ "keys": ["super+j"], "command": "expand_selection", "args": {"to": "indentation"} }
+]
