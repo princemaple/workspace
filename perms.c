@@ -6,8 +6,8 @@ void callee(int *, int);
 void prt(int *);
 
 int main(void){
-	int n, c;
-	while((c=scanf("%i", &n))==1){
+	int n;
+	while(scanf("%i", &n)==1){
 		perms(n);
 	}
 	return 0;
