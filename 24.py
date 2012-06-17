@@ -39,6 +39,7 @@ def call(numset):
 		except:break
 
 def main():
+	print "Hi!\n"
 	while True:
 		q=raw_input("enter number set as '1,2,3,4'>>")
 		if not q:break
