@@ -39,7 +39,7 @@ def parse(f):
     return rt
 
 def furtherparse(v):
-    openclose=re.findall("\<(\w+)(.*?)\>(.*)\</\\1\>", v)
+    openclose=re.findall("\<(\w+)(.*?)\>(.*?)\</\\1\>", v)
     selfclose=re.findall("\<(\w+)([\w\s\"=]*)\/\>", v)
     openclose.reverse()
     selfclose.reverse()
