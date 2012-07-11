@@ -33,7 +33,7 @@ colo wombat
 highlight LineNr term=bold cterm=NONE ctermfg=White ctermbg=None gui=NONE guifg=Grey guibg=NONE
 
 set guioptions-=T  "remove toolbar
-set ts=4 sw=4 sts=4
+set ts=4 sw=4 sts=4 expandtab
 set gfn=Ubuntu_Mono:h12:cANSI
 set autoindent
 set smartindent
