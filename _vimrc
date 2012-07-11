@@ -1,4 +1,3 @@
-set nocompatible
 source $VIMRUNTIME/vimrc_example.vim
 source $VIMRUNTIME/mswin.vim
 behave mswin
@@ -28,19 +27,43 @@ function MyDiff()
   silent execute '!' . cmd . ' ' . opt . arg1 . ' ' . arg2 . ' > ' . arg3 . eq
 endfunction
 
+"GUI stuff
 set nu
 colo wombat
 highlight LineNr term=bold cterm=NONE ctermfg=White ctermbg=None gui=NONE guifg=Grey guibg=NONE
-
-set guioptions-=T  "remove toolbar
-set ts=4 sw=4 sts=4 expandtab
 set gfn=Ubuntu_Mono:h12:cANSI
+set guioptions-=T  "remove toolbar
+set encoding=utf-16
+set cul
+set ruler
+set laststatus=2
+set wrap
+set textwidth=79
+set formatoptions=qrn1
+set colorcolumn=85
+
+"Actual setting
+set nocompatible
+set ts=4 sw=4 sts=4 noexpandtab
 set autoindent
 set smartindent
 set ignorecase
 set smartcase
-set laststatus=2
 set matchtime=2
 set matchpairs+=<:>
-set cul
-set ruler
+set gdefault
+nnoremap <leader><space> :noh<cr>
+
+"remap
+inoremap <F1> <ESC>
+nnoremap <F1> <ESC>
+vnoremap <F1> <ESC>
+
+" Shortcut to rapidly toggle `set list`
+nmap <leader>l :set list!<CR>
+
+" Use the same symbols as TextMate for tabstops and EOLs
+set listchars=tab:»\ ,eol:¬
+
+nnoremap <leader>evrc :e $MYVIMRC<cr>
+inoremap jj <ESC>
