@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+display: ${1:inline/block/none};
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>ds</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.css</scope>
+</snippet>

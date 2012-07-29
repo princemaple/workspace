@@ -1,0 +1,13 @@
+{
+	"files":
+	{
+		"jquery": "http://code.jquery.com/jquery.min.js",
+		"ligature": "http://ligature-js.googlecode.com/files/ligature.js",
+		"normalize": "https://raw.github.com/necolas/normalize.css/master/normalize.css",
+		"reset.css": "http://meyerweb.com/eric/tools/css/reset/reset.css"
+	},
+	"packages":
+	{
+		"html5-boilerplate": "http://github.com/h5bp/html5-boilerplate/zipball/v2.0stripped"
+	}
+}

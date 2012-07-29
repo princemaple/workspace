@@ -1,0 +1,81 @@
+{
+	"auto_complete_commit_on_tab": false,
+	"binary_file_patterns":
+	[
+		"*.jpg",
+		"*.jpeg",
+		"*.png",
+		"*.gif",
+		"*.ttf",
+		"*.tga",
+		"*.dds",
+		"*.ico",
+		"*.eot",
+		"*.pdf",
+		"*.swf",
+		"*.jar",
+		"*.zip"
+	],
+	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+	"file_exclude_patterns":
+	[
+		"*.pyc",
+		"*.pyo",
+		"*.exe",
+		"*.dll",
+		"*.obj",
+		"*.o",
+		"*.a",
+		"*.lib",
+		"*.so",
+		"*.dylib",
+		"*.ncb",
+		"*.sdf",
+		"*.suo",
+		"*.pdb",
+		"*.idb",
+		".DS_Store",
+		"*.class",
+		"*.psd",
+		"*.db",
+		"*.pdf"
+	],
+	"folder_exclude_patterns":
+	[
+		".svn",
+		".git",
+		".hg",
+		"CVS"
+	],
+	"font_face": "consolas",
+	"font_options":
+	[
+	],
+	"font_size": 11,
+	"ignored_packages":
+	[
+		"CSSLint",
+		"AAAPackageDev",
+		"AsAbove",
+		"sublime-jslint",
+		"Camaleon",
+		"WordCount",
+		"Auto Semi-Colon",
+		"Change Tracker",
+		"VintageEx",
+		"SublimeWebColors",
+		"Inc-Dec-Value",
+		"Meta",
+		"HTML5",
+		"FoldComments",
+		"HTML Export",
+		"Placeholders",
+		"CSS Less(ish)",
+		"SublimeLinter",
+		"Indent XML"
+	],
+	"tab_completion": false,
+	"theme": "Default.sublime-theme",
+	"vintage_ctrl_keys": false,
+	"word_wrap": true
+}

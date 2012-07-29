@@ -33,7 +33,7 @@ colo wombat
 highlight LineNr term=bold cterm=NONE ctermfg=White ctermbg=None gui=NONE guifg=Grey guibg=NONE
 set gfn=Ubuntu_Mono:h12:cANSI
 set guioptions-=T  "remove toolbar
-set encoding=utf-16
+set encoding=utf-8
 set cul
 set ruler
 set laststatus=2
@@ -65,5 +65,9 @@ nmap <leader>l :set list!<CR>
 " Use the same symbols as TextMate for tabstops and EOLs
 set listchars=tab:»\ ,eol:¬
 
-nnoremap <leader>evrc :e $MYVIMRC<cr>
+nnoremap <leader>rc :e $MYVIMRC<cr>
 inoremap jj <ESC>
+
+" minibufexplorer
+map <Leader>b :MiniBufExplorer<cr>
+let g:miniBufExplUseSingleClick = 1

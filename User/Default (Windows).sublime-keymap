@@ -11,7 +11,6 @@
 		"args": {"forward": true},
 		"context": [{"key": "setting.command_mode"}, {"key": "setting.vintage_ctrl_keys"}]
 	},
-	// { "keys": ["ctrl+k", "ctrl+f"], "command": "indentxml" },
 	{ "keys": ["j", "j"], "command": "exit_insert_mode",
 	  "context":
 	  [
@@ -47,5 +46,20 @@
 	        { "key": "has_next_field", "operator": "equal", "operand": false }
 	    ]
 	},
-	{ "keys": ["super+j"], "command": "expand_selection", "args": {"to": "indentation"} }
+	{ "keys": ["v", "v"], "command": "run_macro_file",
+		"args": {"file": "Packages/Default/Add Line.sublime-macro"},
+		"context":
+		[
+		    { "key": "setting.command_mode", "operand": false },
+		    { "key": "setting.is_widget", "operand": false }
+		]
+	},
+	{ "keys": ["super+j"], "command": "expand_selection", "args": {"to": "indentation"} },
+
+	{ "keys": ["`"], "command": "hide_auto_complete", "context":
+		[
+			{ "key": "auto_complete_visible", "operator": "equal", "operand": true }
+		]
+	}
+	// { "keys": ["ctrl+k", "ctrl+f"], "command": "indentxml" },
 ]
