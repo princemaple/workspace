@@ -1,0 +1,34 @@
+{
+	"replacements": {
+		"common_space": {
+			"find": ",(?!\\s)",
+			"replace": ", ",
+			"greedy": true,
+			"case": false
+		},
+		"semicolon_space": {
+			"find": ";(?!$)(?!\\s)",
+			"replace": "; ",
+			"greedy": true,
+			"case": false
+		},
+		"opening_bracket_space": {
+			"find": "\\((?!\\s)",
+			"replace": "( ",
+			"greedy": true,
+			"case": false
+		},
+		"closing_bracket_space": {
+			"find": "(?<!\\s)\\)",
+			"replace": " )",
+			"greedy": true,
+			"case": false
+		},
+		"conjunction":{
+			"find": "(\\S+)(\\&\\&|\\|\\||==|\\+=|\\-=|\\*=|\\/=|(?<!=)=)(\\S+)",
+			"replace": "\\1 \\2 \\3",
+			"greedy": true,
+			"case": false
+		}
+	}
+}

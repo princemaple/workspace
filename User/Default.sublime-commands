@@ -1,0 +1,8 @@
+[
+	{
+		"caption": "Reg Replace: C type code clean up",
+		"command": "reg_replace",
+		"args": {"replacements": ["common_space", "semicolon_space",
+		"opening_bracket_space", "closing_bracket_space", "conjunction"]}
+	}
+]
