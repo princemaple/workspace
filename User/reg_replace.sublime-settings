@@ -29,14 +29,14 @@
 			"scope_filter": ["source", "-comment", "-string"]
 		},
 		"conjunction":{
-			"find": "(\\S+)(\\&\\&|\\|\\||==|\\+=|\\-=|\\*=|\\/=|\\^=|!=)(\\S+)",
+			"find": "(\\S+)(\\&\\&|\\|\\|)(\\S+)",
 			"replace": "\\1 \\2 \\3",
 			"greedy": true,
 			"case": false,
 			"scope_filter": ["source", "-comment", "-string"]
 		},
 		"equal":{
-			"find": "(\\S+)(=)(\\S+)",
+			"find": "(\\w+)(=|==|\\+=|\\-=|\\*=|\\/=|\\^=|!=|<=|>=)(\\w+)",
 			"replace": "\\1 \\2 \\3",
 			"greedy": true,
 			"case": false,
