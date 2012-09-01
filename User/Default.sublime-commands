@@ -9,7 +9,7 @@
 				"semicolon_space",
 				"opening_bracket_space",
 				"closing_bracket_space",
-				"conjunction",
+				"logic",
 				"equal"
 			]
 		}

@@ -28,7 +28,7 @@
 			"case": false,
 			"scope_filter": ["source", "-comment", "-string"]
 		},
-		"conjunction":{
+		"logic":{
 			"find": "(\\S+)(\\&\\&|\\|\\|)(\\S+)",
 			"replace": "\\1 \\2 \\3",
 			"greedy": true,
