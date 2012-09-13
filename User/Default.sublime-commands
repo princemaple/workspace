@@ -13,5 +13,16 @@
 				"equal"
 			]
 		}
+	},
+
+	{
+		"caption": "Reg Replace: Fix hateful code format",
+		"command": "reg_replace",
+		"args": {
+			"replacements": [
+				"fuckingformat",
+				"toomanynewlines"
+			]
+		}
 	}
 ]
