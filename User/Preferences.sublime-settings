@@ -38,7 +38,9 @@
 		"*.class",
 		"*.psd",
 		"*.db",
-		"*.pdf"
+		"*.pdf",
+		"*.sublime-project",
+		"*.sublime-workspace"
 	],
 	"folder_exclude_patterns":
 	[
