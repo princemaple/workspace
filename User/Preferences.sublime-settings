@@ -38,7 +38,9 @@
 		"*.class",
 		"*.psd",
 		"*.db",
-		"*.pdf"
+		"*.pdf",
+		"*.sublime-project",
+		"*.sublime-workspace"
 	],
 	"folder_exclude_patterns":
 	[
@@ -51,7 +53,8 @@
 	"font_options":
 	[
 	],
-	"font_size": 11,
+	"font_size": 12,
+	"highlight_line": true,
 	"ignored_packages":
 	[
 		"CSSLint",
@@ -71,7 +74,8 @@
 		"Placeholders",
 		"CSS Less(ish)",
 		"SublimeLinter",
-		"Indent XML"
+		"Indent XML",
+		"SublimeBlockCursor"
 	],
 	"tab_completion": false,
 	"theme": "Default.sublime-theme",
