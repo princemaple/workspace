@@ -43,7 +43,7 @@
 			"scope_filter": ["source", "-comment", "-!string"]
 		},
 		"fuckingformat": {
-			"find": "\n\t*\\{",
+			"find": "\n\\s*\\{",
 			"replace": "{",
 			"greedy": true,
 			"case": false,
