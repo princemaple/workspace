@@ -55,6 +55,13 @@
 			"greedy": true,
 			"case": false,
 			"scope_filter": ["source", "-comment", "-!string"]
+		},
+		"bettercomment": {
+			"find": "//(?=\\S)",
+			"replace": "// ",
+			"greedy": true,
+			"case": false,
+			"scope_filter": ["comment"]
 		}
 	}
 }

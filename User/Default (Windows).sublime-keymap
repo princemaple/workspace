@@ -6,10 +6,9 @@
 			{ "key": "setting.tab_completion", "operator": "equal", "operand": true }
 		]
 	},
-	{
-		"keys": ["ctrl+d"], "command": "find_under_expand",
-		"args": {"forward": true},
-		"context": [{"key": "setting.command_mode"}, {"key": "setting.vintage_ctrl_keys"}]
+	{ "keys": ["ctrl+k", "ctrl+f"],
+		"command": "open_dir",
+		"args": {"dir": "$file_path", "file": "$file_name"}
 	},
 	{ "keys": ["j", "j"], "command": "exit_insert_mode",
 	  "context":
@@ -62,6 +61,34 @@
 		]
 	},
 	{ "keys": ["super+n"], "command": "advanced_new_file"},
-	{ "keys": ["ctrl+super+t"], "command": "open_terminal"}
+	{ "keys": ["ctrl+super+t"], "command": "open_terminal"},
+	{ "keys": ["alt+x"],
+		"command": "reg_replace",
+		"args": {
+			"replacements": [
+				"fuckingformat",
+				"toomanynewlines"
+			]
+		}
+	},
+	{ "keys": ["alt+c"],
+		"command": "reg_replace",
+		"args": {
+			"replacements": [
+				"common_space",
+				"semicolon_space",
+				"opening_bracket_space",
+				"closing_bracket_space",
+				"logic",
+				"equal",
+				"bettercomment"
+			]
+		},
+		"context": [
+			{ "key": "setting.is_widget", "operator": "equal", "operand": false }
+		]
+	},
+	{ "keys": ["alt+up"], "command": "move", "args": {"by": "stops", "empty_line": true, "forward": false} },
+	{ "keys": ["alt+down"], "command": "move", "args": {"by": "stops", "empty_line": true, "forward": true} }
 	// { "keys": ["ctrl+k", "ctrl+f"], "command": "indentxml" },
 ]

@@ -10,7 +10,8 @@
 				"opening_bracket_space",
 				"closing_bracket_space",
 				"logic",
-				"equal"
+				"equal",
+				"bettercomment"
 			]
 		}
 	},
