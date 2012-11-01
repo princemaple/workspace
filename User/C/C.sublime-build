@@ -1,7 +1,0 @@
-{
-	"cmd": ["gcc -Wall -ansi -std=c99 -o ${file_base_name} ${file_name}"],
-	"working_dir": "${file_path}",
-	"file_regex": "^(.*?):([0-9]*):([0-9]*): (?:error|warning): (.*?)$",
-	"shell": true,
-	"selector": "source.c"
-}
