@@ -49,12 +49,12 @@ class LogicalSymbol(object):
 		if context: self.read(context)
 		if not self.content: return None
 		import re
-		proccessed = self.content
+		processed = self.content
 		for symbol in self.__data:
-			proccessed = re.sub(" *"+symbol+" *",
-				self.__data[symbol], proccessed)
-		self.result = proccessed
-		return proccessed
+			processed = re.sub(" *"+symbol+" *",
+				self.__data[symbol], processed)
+		self.result = processed
+		return processed
 
 	def htmlize(self):
 		template = """<!doctype html>\n<html lang="en">\n<head>\n\t<meta charset="UTF-8">\n\t<title>LogicalSymbol Process Result</title>\n</head>\n<body>\n\t<div style="width:800px; margin: auto;">{{content}}</div>\n</body>\n</html>"""
