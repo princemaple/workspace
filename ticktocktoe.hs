@@ -1,3 +1,4 @@
+-- using tuple to build such game is a fail
 module Main where
 
 import System.IO
