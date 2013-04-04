@@ -1,7 +1,7 @@
 import re
 
-with open("PrM.sublime-theme", "r") as f:
-	w = open("PrM2.sublime-theme", "w")
+with open("XDefault.sublime-theme", "r") as f:
+	w = open("XDefault2.sublime-theme", "w")
 	t = f.read().replace("\n", "@")
 	s = "// transient property not needed"
 	t = re.sub(r"\{[^{]+?transient.+?\},", s, t)
